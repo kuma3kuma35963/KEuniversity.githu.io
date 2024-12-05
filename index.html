@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">    
+    <mata name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, maximum-scale=1">
+    <title>KE国際大学</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common/css/jquery.bxslider.css">
+    <link href="common/css/style_sp.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="open">
+    <header>
+    <div id="headerTop">
+        <div id="logo"><img src="images/logo.png" alt="KE国際大学"></div>
+        <a href="#" id="otoiawase">資料請求</a>
+        </div>
+
+        <div id="nav-toggle">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+      
+     <nav id="gnavi">
+        <ul>
+            <li><a href="#">News<br><span>最新情報</span></a></li>
+            <li><a href="#">About KE<br><span>KEについて</span></a></li>
+            <li><a href="#">Admissions<br><span>入学案内</span></a></li>
+            <li><a href="#">Academics<br><span>学部・学科</span></a></li>
+            <li><a href="#">Research<br><span>研究</span></a></li>
+        </ul>
+     </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // スマホハンバーガーメニュー
+        $(function () {
+            // ハンバーガーメニューをクリックしたときの処理
+            $('#nav-toggle').click(function() {
+                $('body').toggleClass('open');
+            });
+        });
+    </script>
+    
+
+<section>
+    <div id="mainPhoto">
+        <img src="images/main1.png" alt="校舎">
+        <img src="images/main2.png" alt="学生">
+        <img src="images/main3.png" alt="キャンバス">
+        <img src="images/main4.png" alt="学生">
+    </div>
+
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="common/js/jquery.bxslider.js"></script>
+ 
+ <script>
+    $(function(){
+     $("#mainPhoto").bxSlider({
+        auto:true,
+        pause:3000
+     });
+    });
+ </script>   
+</section>
+
+<section>
+ <div id="news">
+    <h2>News<span>お知らせ</span></h2>
+ </div>
+ <div id="newsA">
+        <ul>
+        <li><img src="images/news.png" alt="講義" style="margin-top: 10px;"></li>
+        <li><p id="nyuugaku"><span>2025年度版 学部入学案内</span><br>「世界を変える」 は、夢ではない。<br>人類社会が抱えるさまざまな 「正解のない課題」 その解決に果敢に挑む明日のグローバルリーダーはほかの誰でもなく、あなただと、KEは信じる。学問分野の枠を超えて自由に探究を広げられる仕組み。多様性を認め合い、違いから学び合う文化。誰もが対等で、 誰にでも居場所がある環境。KEだから培われる、知性、感性、理性がある。そう確信できる学びに、 仲間に、KEなら出会える。</p></li>
+        </ul>
+    </div>
+ 
+</section>
+
+<section>
+    <div id="about">   
+    <h2>AboutKE<span>KEについて</span></h2>
+    </div>
+        <div id="aboutA">
+         <ul>
+            <li><img src="images/about1.png" alt="語学">
+            <p id ="gogaku" style="padding-top: 40px;"><span>語学のKE</span>留学やビジネスレベルの語学力が身につくインテンシブ・コース</p></li>
+            <li><img src="images/about2.png" alt="キャリア">
+            <p id="kyaria" style="padding-top: 40px;"><span style="margin-top: 5px;margin-bottom: 5px;">充実したキャリアサポート</span>一人ひとりに寄り添った支援によってもたらされる高い就職決定率・満足度に注目。</p></li>
+            <li><img src="images/about3.png" alt="学長">
+            <p id="gakutyou" style="padding-top: 40px;"><span>本学初の女性学長</span>2024年4月に着任した学長のこれからのKEに寄せるメッセージをお届けします。</p></li>    
+         </ul>
+         <a href="#" style="width: 90%;text-align: left;display: block;margin-left: auto;margin-right: auto;margin-top: 50px;font-size: larger;">ページTop</a>
+         <script>
+            $(function(){
+                $('a[href^="#"]').click(function(){
+                    var speed = 500;
+                    var href = $(this).attr("href");
+                    if(href === "#") {
+                        var target = $("html");
+                    } else {
+                    var target = $(href);
+                    }
+                var position = target.offset().top;
+                $("html,body").animate({
+                    scrollTop:position
+                },speed);
+                return false;
+                });
+            });
+        </script>
+        </div>
+</section>
+
+<footer>
+    <div id="footer">
+    <div id="flex">
+        <ul>
+            <li><a href="#">サイトマップ</a></li>
+            <li><img src="images/next.png" alt="右" id="migi1"></li>
+            <li><a href="#">個人情報保護方針</a></li>
+            <li><img src="images/next.png" alt="右" id="migi2"></li>
+            <li><a href="#">採用情報</a></li>
+            <li><img src="images/next.png" alt="右" id="migi3"></li>
+            <li><a href="#">SNS公式アカウント一覧</a></li>
+            <li><img src="images/next.png" alt="右" id="migi4"></li>
+        </ul>
+    </div>
+    <div id="footerBottom">
+        <div id="logo2"><img src="images/logo.png" alt="KE国際大学"></div>
+        <div id="link">  
+        <ul>
+            <li><a href="#" id="sns1">Facebook</a></li>
+            <li><a href="#" id="sns2">X</a></li>
+            <li><a href="#" id="sns3">Instagram</a></li>
+            <li><a href="#" id="sns4">LINE</a></li>
+        </ul>
+        </div>
+     </div>
+     
+</footer>
+
+
+</body>
+</html>

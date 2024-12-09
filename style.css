@@ -220,6 +220,10 @@
     margin: 0 auto;
     margin-top: 150px;
 }
+.footer-botom{
+  padding: 50px 0;
+}
+
   #flex ul{
     display: flex;
     justify-content: right;
